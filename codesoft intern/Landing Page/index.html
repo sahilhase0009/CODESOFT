@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Simple Landing</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="main-content">
+        <div class="hero">
+            <h2>Welcome to Our Landing Page</h2>
+            <p>Discover the simplicity and elegance of our services. Get started now!</p>
+            <a href="#services" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>We create responsive websites to help you establish a strong online presence. Learn more <a href="#contact">here</a>.</p>
+            </div>
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Improve your website's visibility and search engine ranking with our SEO services. Learn more <a href="#contact">here</a>.</p>
+            </div>
+            <div class="service-card">
+                <h3>Digital Marketing</h3>
+                <p>We offer digital marketing solutions that enhance your brand awareness and online presence. Learn more <a href="#contact">here</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a team of experienced professionals committed to providing high-quality services to help you grow your business online. With a focus on simplicity and functionality, we strive to meet all your digital needs.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sahil Hase, a passionate web developer with a love for creating dynamic and user-friendly websites. With years of experience in web development, I specialize in front-end design and development, ensuring that every website I create is both functional and visually appealing.</p>
+        <p>When I'm not coding, I enjoy exploring new technologies, reading, and collaborating on exciting projects. I'm always eager to learn and grow, and I look forward to working on new challenges and creating innovative solutions for my clients.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to work together, feel free to get in touch with us.</p>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Simple Landing | Designed by Sahil Hase</p>
+    </footer>
+</body>
+</html>
