@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 2rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 15px;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #00f2fe;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        /* About Section with a new gradient */
+        section#about {
+            background: linear-gradient(to bottom, #d48942, #e49b57); /* New Gradient */
+            color: #fff;
+            animation: slideInLeft 1s ease-in-out;
+            border-radius: 15px;
+            margin: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 23px auto;
+            border: 4px solid #686868;
+           
+        }
+
+        section#about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Skills Section with light background */
+        section#skills {
+            background-color: #f4f4f9; /* Light background */
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section#skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section#skills ul li {
+            display: inline-block;
+            background: #e3d3c5;
+            color: #3b3737;
+            padding: 20px 20px;
+            margin: 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section#projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section#projects ul li {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 1s;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+        }
+
+        footer a {
+            color: #00f2fe;
+            text-decoration: none;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sahil Hase</h1>
+        <p>Web Developer | Creative Thinker</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="your-image.jpg" alt="Sahil Hase">
+        <p>Hi, I’m Sahil Hase, a Computer Engineering student with a strong passion for developing impactful software applications and innovative web solutions. I specialize in Web Development, using technologies such as HTML, CSS, JavaScript, and Flutter for Android applications. My technical expertise also spans programming languages like C++, Python, Java, SQL, and version control systems such as Git.</p>
+        <p>Throughout my academic journey, I’ve worked on a diverse range of projects that focus on problem-solving, user-friendly design, and creating solutions that have a positive impact. I am driven by my love for technology and my ambition to continue learning and contributing to meaningful projects in the field of software development.</p>
+        <p>I’m always open to new opportunities where I can leverage my skills to create applications and websites that not only meet users' needs but also provide seamless, engaging experiences. With attention to detail and a strong problem-solving mindset, I am eager to take on new challenges and further develop my technical expertise.</p>
+    </section>
+    
+    
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+            <li>Flutter</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Library Management System</h3>
+                <p>A system developed using C++ for efficient book management in libraries.</p>
+            </li>
+            <li>
+                <h3>Portfolio</h3>
+                <p>A personal portfolio website showcasing my skills, projects, and achievements, built using HTML, CSS, and JavaScript.</p>
+            </li>
+            <li>
+                <h3>To-Do List Application (Flutter)</h3>
+                <p>A simple yet efficient to-do list application built with Flutter, allowing users to manage tasks, set reminders, and prioritize their activities.</p>
+            </li>
+            <li>
+                <h3>Campus Keeper</h3>
+                <p>A project providing drive links categorized by department and year for easy access to study material and resources.</p>
+            </li>
+            <li>
+                <h3>Flashcard Quiz App</h3>
+                <p>An interactive quiz app that allows users to write answers, with a dark mode and user-friendly interface for efficient learning.</p>
+            </li>
+
+            <li>
+                <h3>Quote Generator</h3>
+                <p>A web application that generates random inspirational quotes, developed with JavaScript and integrated with an API for fetching new quotes.</p>
+            </li>
+            <li>
+                <h3>Chat Bot using IBM Cloud</h3>
+                <p>A comprehensive collection of study materials and drive links categorized by engineering year and department for easy access to resources, ensuring students have all the necessary materials organized and available.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="file:///C:/Users/hases/Desktop/codesoft%20intern/portfolio/Sahil%20Hase%20Resume.pdf.pdf" download>Download My Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: hasesahil99@gmail.com</p>
+        <p>Phone: +91 7822020207</p>
+        <div class="social-icons">
+            <a href="https://github.com/sahilhase0009?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sahil-hase-255603271/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sahil Hase. All rights reserved.</p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
+</body>
+</html>
